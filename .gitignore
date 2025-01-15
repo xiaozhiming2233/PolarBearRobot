@@ -1,0 +1,37 @@
+*.pyc
+*.tmp
+/.cache/
+/.history/*
+/.vscode/
+.DS_Store
+.cache
+**/__pycache__/
+/.test/*.so
+/.test/*.c 
+/.build/
+polarbear.iso
+
+# Python缓存文件
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# 日志文件
+**/Log/*.log
+
+# 配置文件（如果config.yaml包含敏感信息，建议忽略）
+# Config/config.yaml
+
+# IDE相关（如果使用）
+.idea/
+.vscode/
+*.swp
+
+# 虚拟环境（如果有）
+venv/
+env/
+.env/
+
+# 系统文件
+.DS_Store
+Thumbs.db

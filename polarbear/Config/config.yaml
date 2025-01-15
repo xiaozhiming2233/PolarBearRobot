@@ -1,0 +1,57 @@
+## MsgPushServer配置
+pushServerConfig:
+  # 代理类型: http, https, socks5
+  proxy:
+    type: 'http'  
+    # 代理服务器地址(宿主机代理即可)
+    host: '192.168.1.177'  
+    # 代理端口
+    port: '10811'   
+  # 企业微信群机器人webhook-key
+  webhookkey: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=123456789qwertyuiop'      
+
+
+# 定时发送配置
+pushtimeConfig:
+  # 早报推送时间
+  morningPageTime: '09:30'
+  # 午报推送时间
+  noonPageTime: '11:30'
+  # 晚报发送时间设置
+  eveningPageTime: '17:30'
+  # 下班推送时间设置
+  offWorkTime: '18:00'
+  # 安全文章推送时间设置
+  secWikiTime: '15:30'
+  # 微博热点/英语句子发送时间设置 
+  weiboTime: '10:30'
+  # 测试推送时间设置
+  testTime: '11:38'
+
+
+
+## 每日新闻、天气、心灵鸡汤、微博热点推送配置secretkey
+## 接口：https://whyta.cn/api/tx/guonei
+dailyAffairsConfig:
+  # 各种api接口
+  apiweather: 
+    url: 'https://api.seniverse.com/v3/weather/daily.json'
+    skey: ''
+    location: 'guangzhou'
+  # whyta api
+  apiwhyta:
+    url: 'https://whyta.cn/api/tx'
+    skey: ''
+    news:
+      # 新闻 
+        num: '6'
+  # 天行API
+  apitianxing:
+    url: 'https://apis.tianapi.com'
+    skey: ''
+
+    
+## AI/GPT接口配置
+aiServerConfig:
+  # AI接口地址
+

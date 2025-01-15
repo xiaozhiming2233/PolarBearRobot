@@ -1,0 +1,8 @@
+config==0.5.1
+gradio_client==1.5.2
+loguru==0.6.0
+polarbear==0.0.0.dev10
+PyYAML==6.0.2
+PyYAML==6.0.2
+Requests==2.32.3
+schedule==1.2.2

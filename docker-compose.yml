@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nvdparser:
+    image: polarbear:1.0.1
+    environment:
+      - PYTHONHTTPSVERIFY=0
+      # - HTTP_PROXY=http://192.168.1.171:10809
+      - PYTHONUNBUFFERED=1 
+    #build: .
+    container_name: p0larbear
+    volumes:
+      - ./:/app/src
+      - ./site-packages/:/usr/local/lib/python3.12/site-packages/
+      - ./task_state.json:/app/src/task_state.json
+      # - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/dev/mem:/dev/mem:ro"
+      # - "./:/build"
+    privileged: true
+    working_dir: /app/src
+    command: 
+       - /bin/sh
+       - -c
+       - "python -m polarbear.BotServer.MainServer"
+      #  - tail -f /etc/issue 
+    restart: always
