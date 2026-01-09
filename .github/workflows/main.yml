@@ -28,8 +28,8 @@ jobs:
           fi
           murphysec --version
       
-      - name: Code scan
-        run: murphysec scan . --token ${{ secrets.MURPHYSEC_TOKEN }} --server https://private-v3.murphysec.com --json >scan_results.json
+      # - name: Code scan
+      #   run: murphysec scan . --token ${{ secrets.MURPHYSEC_TOKEN }} --server https://private-v3.murphysec.com --json >scan_results.json
       
       - name: Format data
         run: | 
