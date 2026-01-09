@@ -6,3 +6,4 @@ PyYAML==6.0.2
 PyYAML==6.0.2
 Requests==2.32.3
 schedule==1.2.2
+colorama==0.4.6
