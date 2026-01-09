@@ -1,8 +1,10 @@
 name: "MurphySec code scan"
+
 on:
   push:
     branches:
       - master
+      
 jobs:
   build:
     runs-on: ubuntu-22.04  # 固定系统版本，提升稳定性
