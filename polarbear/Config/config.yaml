@@ -8,7 +8,7 @@ pushServerConfig:
     # 代理端口
     port: '10811'   
   # 企业微信群机器人webhook-key
-  webhookkey: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=123456789qwertyuiop'      
+  webhookkey: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=4f14fd85-2ddd-49d1-b203-5a9e978bde18'      
 
 
 # 定时发送配置
