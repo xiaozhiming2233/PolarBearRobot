@@ -85,9 +85,3 @@ cd polarbear && pipreqs ./ ----encoding=utf8
 
 
 ```
-### 交流与反馈
-
-- 如果你有任何问题或建议，欢迎通过 [Issues](https://github.com/Samsepik9/PolarBearRobot/issues) 与我联系，不定期查看消息并回复，本项目鼓励健康的交流和学习氛围。
-
-- 如果你喜欢这个项目，请给我一颗star，谢谢你的支持！如果你特别喜欢这个项目，也可以请我喝杯咖啡👽，谢谢老板的支持！
-![coffee](./img/coffee_.pic.jpg)
